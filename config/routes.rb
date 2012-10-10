@@ -1,4 +1,10 @@
 PersonalWebsite::Application.routes.draw do
+  get "static_pages/blog"
+
+  get "static_pages/projects"
+
+  get "static_pages/about_me"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
