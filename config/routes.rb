@@ -1,9 +1,9 @@
 PersonalWebsite::Application.routes.draw do
-  get "static_pages/blog"
+  root :to => 'static_pages#blog'
 
-  get "static_pages/projects"
+  match "/about_me" => "static_pages#about_me"
 
-  get "static_pages/about_me"
+  match "/projects" => "static_pages#projects"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
